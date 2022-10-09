@@ -37,7 +37,6 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
-  
 }
 
 .no-style {
@@ -64,6 +63,7 @@ body {
   display: flex;
   margin-left: 93px; 
 }
+
 .header-contact  {
   display: flex;
   margin-left: auto;
@@ -96,7 +96,6 @@ margin-right: 50px;
 .header-menu-link.current {
   color: var(--blue-primary);
 }
-
 
 /* Стилі головного блока */
 
@@ -219,6 +218,7 @@ margin-right: 30px;
   justify-content: space-between;
   text-align: center;
 }
+
 .team-list figure {
  margin: 0;
 }
