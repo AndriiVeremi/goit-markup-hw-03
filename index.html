@@ -19,19 +19,19 @@
 
 <!--Шапка сайту-->
 
-    <header class="header">  
-      <div class="container">    
+        <header class="header"> 
+      <div class="container header-nav">   
         <a href="/" class="logo-top"><span class="logo-top-blue">Web</span>Studio</a>
       <nav>
-        <ul class="header-menu no-stule">
-          <li><a href="./index.html" class="header-menu-item current">Студія</a></li>
-          <li><a href="./portfolio.html" class="header-menu-item">Портфоліо</a></li>
-          <li><a href="#" class="header-menu-item">Контакти</a></li>
+        <ul class="header-menu no-style">
+          <li class="item"><a href="./index.html" class="header-menu-link current">Студія</a></li>
+          <li class="item"><a href="./portfolio.html" class="header-menu-link">Портфоліо</a></li>
+          <li class="item"><a href="#" class="header-menu-link">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="header-contact no-stule">
-        <li><a href="tel:+380961111111" class="header-contact-item">+38 096 111 11 11</a></li>
-        <li><a href="mailto:info@devstudio.com" class="header-contact-item">info@devstudio.com</a></li>
+      <ul class="header-contact no-style">
+        <li class="item"><a href="tel:+380961111111" class="header-contact-link">+38 096 111 11 11</a></li>
+        <li class="item"><a href="mailto:info@devstudio.com" class="header-contact-link">info@devstudio.com</a></li>
       </ul>
       </div>
     </header>
@@ -45,7 +45,7 @@
           Ефективні рішення для <br>
           вашого бізнесу
         </h1>
-        <button type="button" class="btn">Замовити послугу</button>
+        <button type="button" class="btn"><a href="#" class="btn-link"> Замовити послугу</a></button>
       </section>
 
 <!--Інформаційний блок-->
@@ -53,20 +53,20 @@
       <section class="info">
         <div class="container">
           <h2 class="info-title">Інформація</h2>
-        <ul class="info-list no-stule">
-          <li>
+        <ul class="info-list no-style">
+          <li class="info-item">
             <h3 class="info-item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
           </li>
-          <li>
+          <li class="info-item">
             <h3 class="info-item-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
           </li>
-          <li>
+          <li class="info-item">
             <h3 class="info-item-title">ПЛАНУВАННЯ</h3>
             <p>Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
-          <li>
+          <li class="info-item">
             <h3 class="info-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
@@ -79,7 +79,7 @@
       <section class="what-dowedo">
         <div class="container">
           <h2 class="what-dowedo-title">Чим ми займаємося</h2>
-        <ul class="what-dowedo-list no-stule">
+        <ul class="what-dowedo-list no-style">
           <li>
             <img src="./images/what_dowedo_img_1.jpg" alt="фото компютера" width="370" height="294">
           </li>
@@ -100,26 +100,44 @@
        <div class="container">
 
          <h2 class="team-title">Наша команда</h2>
-        <ul class="team-list no-stule">
-          <li>
+        <ul class="team-list no-style">
+          <li class="team-item">
+            <figure>
             <img src="./images/team_img_1.jpg" alt="фото Ігора Дем'яненка" width="270" height="260">
+            <figcaption class="team-descript">
             <h3 class="team-item-title">Ігор Дем'яненко</h3>
             <p>Product Designer</p>
+            </figcaption>
+            </figure>
           </li>
-          <li>
+          <li class="team-item">
+            <figure>
             <img src="./images/team_img_2.jpg" alt="фото Ольги Рєпіної" width="270" height="260">
+            <figcaption class="team-descript">
             <h3 class="team-item-title">Ольга Рєпіна</h3>
             <p>Frontend Developer</p>
+            </figcaption>
+            </figure>
           </li>
-          <li>
+          
+          <li class="team-item">
+            <figure>
             <img src="./images/team_img_3.jpg" alt="фото Миколи Тарасова" width="270" height="260">
+            <figcaption class="team-descript">
             <h3 class="team-item-title">Микола Тарасов</h3>
             <p>Marketing</p>
+            </figcaption>
+            </figure>
           </li>
-          <li>
+          
+          <li class="team-item">
+            <figure>
             <img src="./images/team_img_4.jpg" alt="фото Михайла Єрмакова" width="270" height="260">
-            <h3 class="team-item-title">Михайло Єрмаков</h3>
+            <figcaption class="team-descript">
+            <h3 class="team-item-title">Михайло Єрмаков</h3>         
             <p>UI Designer</p>
+            </figcaption>
+            </figure>
           </li>
         </ul>
        </div>
@@ -133,7 +151,7 @@
       <div class="container">
         <a href="/" class="logo-footer"><span class="logo-footer-blue">Web</span>Studio</a>
       <address>
-        <ul class="footer-contacts no-stule">
+        <ul class="footer-contacts no-style">
           <li><a href="https://goo.gl/maps/62NH4mXpDvtfNdRu7" target="_blank" rel="noreferrer noopener nofollow" class="footer-adres-item">м. Київ, пр-т Лесі Українки, 26</a></li>
           <li><a href="tel:+380961111111" class="footer-contact-item">+38 096 111 11 11</a></li>
           <li><a href="mailto:info@devstudio.com" class="footer-contact-item">info@devstudio.com</a></li>

@@ -28,14 +28,20 @@ body {
 }
 
 .container {
-  outline: 2px solid #FF00FF;
+  
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.no-stule {
+.header-nav {
+  display: flex;
+  align-items: center;
+  
+}
+
+.no-style {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -55,22 +61,40 @@ body {
   color: var(--blue-primary);
 }
 
-.header-menu-item,
-.header-contact-item {
+.header-menu {
+  display: flex;
+  margin-left: 93px; 
+}
+.header-contact  {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-menu .item:not(:last-child),
+.header-contact .item:not(:last-child) {
+margin-right: 50px;
+}
+
+.header-menu-link,
+.header-contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; 
 }
 
-.header-menu-item:hover,
-.header-menu-item:focus,
-.header-contact-item:hover,
-.header-contact-item:focus {
+.header-menu-link:hover,
+.header-menu-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: var(--blue-primary);
 }
 
-.header-menu-item.current {
+.header-menu-link.current {
   color: var(--blue-primary);
 }
 
@@ -78,16 +102,18 @@ body {
 
 .hero {
   outline: 2px solid #FF00FF;
-  background-color: var(--dark-background-color);
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--dark-background-color);
+  text-align: center;
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+
   color: var(--white-color-text);
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
@@ -102,13 +128,13 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  border: 1px solid var(--blue-primary);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--white-color-text); 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Стилі інформаційного блока */
@@ -123,9 +149,20 @@ body {
   display: none;
 }
 
+.info-list {
+  display: flex; 
+  align-items: stretch;
+  justify-content: space-around; 
+}
+
+.info-list .info-item:not(:last-child) {
+margin-right: 30px;
+}
+
 .info-item-title {
   margin-top: 0;
   margin-bottom: 10px;
+ 
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
@@ -136,10 +173,12 @@ body {
 .info-list p {
   margin-top: 0;
   margin-bottom: 0;
+  
+  color: #757575;
+
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #757575;
 }
 
 /* Стилі чим ми займаємося */
@@ -150,9 +189,15 @@ body {
   padding-bottom: 94px;
 }
 
+.what-dowedo-list{
+  display: flex;
+  justify-content: space-between;
+}
+
 .what-dowedo-title {
   margin-top: 0;
   margin-bottom: 50px;
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -163,19 +208,43 @@ body {
 /* Стилі наша команда */
 
 .team {
-  outline: 2px solid #FF00FF;
-  background-color: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
+ 
+  outline: 2px solid #FF00FF;
+  background-color: #F5F4FA;
 }
 
 .team-title {
   margin-top: 0;
   margin-bottom: 50px;
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.03em; 
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.team-list figure {
+ margin: 0;
+}
+
+.team-item {
+  background-color: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-descript {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-item-title {
@@ -190,6 +259,7 @@ body {
 .team-list p {
   margin-top: 0;
   margin-bottom: 0;
+  
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0.03em;
@@ -198,11 +268,17 @@ body {
 /* Стилі підвал*/
 
 .footer {
+  display: block;
   outline: 2px solid #FF00FF;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 
+
 .logo-footer {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -226,6 +302,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-color-text);
 }
+
+.footer-contact {
+  margin-top: 20px;
+}
+
 .footer-contact-item {
   font-size: 14px;
   line-height: 1.7;
@@ -249,8 +330,17 @@ body {
   padding-top: 94px;
 }
 
-.portfolio-menu-title {
+.portfolio-title {
   display: none;
+}
+
+.portfolio-list {
+ display: flex;
+ justify-content: center;
+}
+
+.portfolio-item:not(:last-child) {
+margin-right: 8px;
 }
 
 .portfolio-btn {
@@ -285,6 +375,35 @@ body {
 
 .portfolio-work-title {
   display: none;
+}
+
+.portfolio-work-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.portfolio-work-item {
+  margin-top: 0;
+  margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
+
+}
+
+.portfolio-work-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+  
+}
+
+
+.portfolio-work-list figure {
+ margin: 0;
+}
+
+.portfolio-descript {
+  padding: 20px 24px;
+  background: #FFFFFF;  
 }
 
 .portfolio-item-title {
