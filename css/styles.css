@@ -24,12 +24,10 @@ body {
 }
 
 .header {
-  outline: 2px solid #FF00FF;
   border: 1px solid #ECECEC;
 }
 
 .container {
-  outline: 2px solid #FF00FF;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -103,7 +101,6 @@ margin-right: 50px;
 /* Стилі головного блока */
 
 .hero {
-  outline: 2px solid #FF00FF;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--dark-background-color);
@@ -257,9 +254,7 @@ margin-right: 30px;
 
 /* Стилі підвал*/
 
-.footer {
-  display: block;
-  outline: 2px solid #FF00FF;
+.footer { 
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
@@ -284,7 +279,6 @@ margin-right: 30px;
   color: var(--blue-primary);
 }
 
-
 .footer address {
   font-style: normal;
 }
@@ -302,8 +296,7 @@ padding-bottom: 0;
 }
 
 .footer-contact {
-  display: block;
-  
+  display: block;  
 }
 
 .footer-contact-item {
@@ -326,7 +319,6 @@ padding-bottom: 0;
 /* Стилі меню портфоліо*/
 
 .portfolio-menu {
-  outline: 2px solid #FF00FF;
   padding-top: 94px;
 }
 
@@ -368,7 +360,6 @@ margin-right: 8px;
 /* Стилі наші роботи */
 
 .portfolio-work {
-  outline: 2px solid #FF00FF;
   padding-top: 34px;
   padding-bottom: 94px;
 }
