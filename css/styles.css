@@ -3,7 +3,7 @@
   --blue-primary: #2196f3;
   --white-color-text: #ffffff;
   --dark-background-color: #2f303a;
-  --secondory-background-color: #F5F4FA;
+  --secondory-background-color: #f5f4fa;
 }
 
 /* Reset styles */
@@ -11,6 +11,22 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Стилі сайту */
@@ -23,9 +39,7 @@ body {
   margin: 0;
 }
 
-.header {
-  border: 1px solid #ECECEC;
-}
+/* Стилі контейнера сайту */
 
 .container {
   width: 1200px;
@@ -34,15 +48,15 @@ body {
   margin: 0 auto;
 }
 
+/* Стилі шапки сайту */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
-}
-
-.no-style {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 /* Стилі шапки сайту */
@@ -61,17 +75,17 @@ body {
 
 .header-menu {
   display: flex;
-  margin-left: 93px; 
+  margin-left: 93px;
 }
 
-.header-contact  {
+.header-contact {
   display: flex;
   margin-left: auto;
 }
 
 .header-menu .item:not(:last-child),
 .header-contact .item:not(:last-child) {
-margin-right: 50px;
+  margin-right: 50px;
 }
 
 .header-menu-link,
@@ -79,11 +93,10 @@ margin-right: 50px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
 }
 
 .header-menu-link:hover,
@@ -107,11 +120,8 @@ margin-right: 50px;
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
-
   color: var(--white-color-text);
-  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
@@ -126,12 +136,11 @@ margin-right: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-  color: var(--white-color-text); 
+  color: var(--white-color-text);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -147,19 +156,17 @@ margin-right: 50px;
 }
 
 .info-list {
-  display: flex; 
+  display: flex;
   align-items: stretch;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .info-list .info-item:not(:last-child) {
-margin-right: 30px;
+  margin-right: 30px;
 }
 
 .info-item-title {
-  margin-top: 0;
   margin-bottom: 10px;
- 
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
@@ -170,9 +177,7 @@ margin-right: 30px;
 .info-list p {
   margin-top: 0;
   margin-bottom: 0;
-  
   color: #757575;
-
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -180,15 +185,13 @@ margin-right: 30px;
 
 /* Стилі чим ми займаємося */
 
-.what-dowedo-list{
+.what-dowedo-list {
   display: flex;
   justify-content: space-between;
 }
 
 .what-dowedo-title {
-  margin-top: 0;
   margin-bottom: 50px;
-  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -203,30 +206,37 @@ margin-right: 30px;
 }
 
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
-  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
-  letter-spacing: 0.03em; 
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-.team-list figure {
- margin: 0;
+.team-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: var(--white-color-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.team-item {
-  background-color:  var(--white-color-text);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.team-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
 }
 
 .team-descript {
@@ -235,7 +245,6 @@ margin-right: 30px;
 }
 
 .team-item-title {
-  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -246,7 +255,6 @@ margin-right: 30px;
 .team-list p {
   margin-top: 0;
   margin-bottom: 0;
-  
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0.03em;
@@ -254,14 +262,14 @@ margin-right: 30px;
 
 /* Стилі підвал*/
 
-.footer { 
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 
 .footer-nav {
- padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .logo-footer {
@@ -284,7 +292,7 @@ margin-right: 30px;
 }
 
 .footer-adres-item {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -292,11 +300,11 @@ margin-right: 30px;
 }
 
 .footer-adres-item:last-child {
-padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer-contact {
-  display: block;  
+  display: block;
 }
 
 .footer-contact-item {
@@ -314,25 +322,24 @@ padding-bottom: 0;
   color: var(--blue-primary);
 }
 
+
 /* ПОРТФОЛІО */
 
-/* Стилі меню портфоліо*/
 
-.portfolio-menu {
-  padding-top: 94px;
-}
+/* Стилі меню портфоліо*/
 
 .portfolio-title {
   display: none;
 }
 
 .portfolio-list {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-item:not(:last-child) {
-margin-right: 8px;
+  margin-right: 8px;
 }
 
 .portfolio-btn {
@@ -343,12 +350,12 @@ margin-right: 8px;
   cursor: pointer;
   border: 1px solid transparent;
   min-width: 73px;
-  
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  text-align: center;                                                                                      
+  text-align: center;
 }
 
 .portfolio-btn:hover,
@@ -359,46 +366,33 @@ margin-right: 8px;
 
 /* Стилі наші роботи */
 
-.portfolio-work {
-  padding-top: 34px;
-  padding-bottom: 94px;
-}
-
-.portfolio-work-title {
-  display: none;
-}
-
 .portfolio-work-list {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-work-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #EEEEEE;
 }
 
 .portfolio-work-item:nth-child(3n) {
-  margin-right: 0; 
+  margin-right: 0;
 }
 
 .portfolio-work-item:nth-last-child(-n + 3) {
-  margin-bottom: 0; 
-}
-
-.portfolio-work-list figure {
- margin: 0;
+  margin-bottom: 0;
 }
 
 .portfolio-descript {
   padding: 20px 24px;
-  background:  var(--white-color-text);  
+  background: var(--white-color-text);
+  border: 1px solid #eeeeee;
+  border-top: inherit;
 }
 
 .portfolio-item-title {
-  margin-top: 0;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
